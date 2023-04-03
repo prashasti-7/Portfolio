@@ -37,6 +37,7 @@ import email from './email.svg'
 import arrowd from './arrow-down.svg'
 import HTML from './html.png';
 import CSS from './css.png';
+import Smoke from './smoke-143172.mp3';
 
 export {
   HTML,
@@ -78,4 +79,5 @@ export {
   planet4,
   github,
   arrowd,
+  Smoke,
 };

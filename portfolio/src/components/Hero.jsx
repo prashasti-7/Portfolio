@@ -44,10 +44,20 @@
 
 
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Typed from 'react-typed';
+import smoke from '../../public/smoke-143172.mp3'
 
 const Hero = () => {
+    //const [isPlaying, setIsPlaying] = useState(false);
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+      play()
+    }, [value]);
+    function play(){
+      new Audio(smoke).play()
+    }
   return (
     <div id='main' className='text-white'>
       <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
@@ -71,7 +81,7 @@ const Hero = () => {
         </div>
         <p className='md:text-2xl text-xl font-bold text-gray-500'>I specialize in UI/UX and branding design based in India. I like to use my skills to help bring a change in the world</p>
         {/* <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button> */}
-        <button className='bg-[#DC2064] m-[10px] font-medium my-6 mx-auto py-3 text-white m-[10px]'>
+        <button className='bg-[#DC2064] m-[10px] font-medium my-6 mx-auto py-3 text-white m-[10px]' onClick={() => setValue(value+1)}>
             <span class="span-mother">
                 <span>L</span>
                 <span>e</span>
@@ -89,6 +99,15 @@ const Hero = () => {
                 <span>o</span>
             </span>
           </button>
+          {/* <Sound url={Smoke}
+            playStuts={
+              isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED
+            }
+            playFromPosition={300}
+            onLoading={handleSongLoading}
+            onPlaying={handleSongPlaying}
+            onFinishedPlaying={handleSongFinishedPlaying}
+            /> */}
       </div>
     </div>
   );
