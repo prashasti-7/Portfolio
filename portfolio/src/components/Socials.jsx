@@ -51,6 +51,9 @@ const Skills = () => {
           <img src={linkedin} ref={el => circleBlue = el} className='circleBlue w-[30px] h-[30px] m-[26px] cursor-pointer' onMouseEnter={() => setState("BLUE")} onMouseLeave={() => setState("BLUE_OUT")}></img>
           <img src={behance} ref={el => circleYellow = el} className='circleYellow w-[35px] h-[35px] m-[25px] cursor-pointer' onMouseEnter={() => setState("YELLOW")} onMouseLeave={() => setState("YELLOW_OUT")}></img>
           <img src={email} ref={el => circleGreen = el} className='circleGreen w-[30px] h-[30px] rounded-[100%] m-[25px] cursor-pointer' onMouseEnter={() => setState("GREEN")} onMouseLeave={() => setState("GREEN_OUT")}></img>
+          <div className='flex m-auto w-[50%] text-right right-0 pl-[400px]'>
+          <p className='text-white font-medium text-[14px]'>Made with 💗 by Prashasti</p>
+        </div> 
         </div>
       </header>
     </div>

@@ -6,7 +6,7 @@ import {HTML, CSS} from '../assets';
 
 const Experience = () => {
   return (
-    <div name='skills' className='w-full h-100% text-gray-300'>
+    <div id='skills' className='w-full h-100% text-gray-300'>
       {/* Container */}
       <div className='max-w-full flex flex-col justify-center w-full h-full'>
           <div>
