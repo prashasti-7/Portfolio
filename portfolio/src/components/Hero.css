@@ -5,7 +5,7 @@ button {
     font-weight: bold;
     color: white;
     border-radius: 2rem;
-    width: 95.02px;
+    width: 150px;
     height: 42.66px;
     border: none;
     background-color: #3653F8;
@@ -66,6 +66,16 @@ button {
     -webkit-transition: .7s;
     transition: .7s;
   }
+
+  button .span-mother span:nth-child(7) {
+    -webkit-transition: .8s;
+    transition: .8s;
+  }
+
+  button .span-mother span:nth-child(8) {
+    -webkit-transition: .9s;
+    transition: .9s;
+  }
   
   button .span-mother2 {
     display: -webkit-box;
@@ -115,4 +125,14 @@ button {
   button .span-mother2 span:nth-child(6) {
     -webkit-transition: .7s;
     transition: .7s;
+  }
+
+  button .span-mother span:nth-child(7) {
+    -webkit-transition: .8s;
+    transition: .8s;
+  }
+
+  button .span-mother span:nth-child(8) {
+    -webkit-transition: .9s;
+    transition: .9s;
   }

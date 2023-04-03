@@ -10,7 +10,7 @@ const ContactMe = () => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
-        <Sphere args={[1, 100, 200]} scale={2.2}>
+        <Sphere args={[1, 100, 200]} scale={1.5}>
           <MeshDistortMaterial
             color="#B4295B"
             attach="material"

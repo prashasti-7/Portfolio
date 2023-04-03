@@ -1,19 +1,36 @@
 import React from 'react'
 import './Hireme.css'
+import '../fonts/Fontspring-DEMO-rocgroteskextrawide-extrabold.otf'
 
 const Hireme = () => {
   return (
-    <div className='flex h-[50vh]'>
-      <div className={`face h-[300px] w-[300px] 
-                    bg-white rounded-full flex 
-                    justify-center items-center
-                    before: content-''
-      `}>
-            <div className='eyes'>
-                <div className='eye relative top-0 flex w-[17px] h-[17px] block m-[20px]'></div>
-                <div className='eye relative top-0 flex w-[17px] h-[17px] block m-[20px]'></div>
-            </div>
-      </div>
+    <div >
+        <h1 className={`flex justify-center text-[48px] text-white ss:text-[64px] pt-20`}>
+        Let's get in touch!
+        </h1>
+        <p className='flex justify-center text-white text-center'>lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem <br></br> ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+        <button className='bg-white text-white m-[10px]'>
+          <span className="span-mother text-black">
+              <span>C</span>
+              <span>o</span>
+              <span>n</span>
+              <span>n</span>
+              <span>e</span>
+              <span>c</span>
+              <span>t</span>
+          </span>
+          <span className="span-mother2 text-black">
+              <span>C</span>
+              <span>o</span>
+              <span>n</span>
+              <span>n</span>
+              <span>e</span>
+              <span>c</span>
+              <span>t</span>
+
+          </span>
+        </button>
+        <a href="#">Hover this link</a>
     </div>
   )
 }

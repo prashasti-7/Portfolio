@@ -4,13 +4,13 @@ import {motion} from 'framer-motion';
 import { staggerContainer } from '../utils/motion';
 import { exploreWorlds, exploreWorldsOne } from '../constants';
 import ExploreCard from './ExploreCard';
-import {planet2} from '../assets/index'
 
 const Explore = () => {
     const [active, setActive] = useState('world-1');
   
     return (
       <section className={`sm:p-4 xs:p-4 px-6 py-12`} id="explore">
+        <h1 className='text-[48px] text-white ss:text-[64px]'>Projects</h1>
         <motion.div
           variants={staggerContainer}
           initial="hidden"

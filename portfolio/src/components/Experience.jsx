@@ -10,8 +10,8 @@ const Experience = () => {
       {/* Container */}
       <div className='max-w-full flex flex-col justify-center w-full h-full'>
           <div>
-              <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
-              <p className='py-4'>// These are the technologies I've worked with</p>
+              <h1 className='text-[48px] text-white ss:text-[64px]'>Skills</h1>
+              {/* <p className='pb-6'>These are the technologies I've worked with</p> */}
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-10 text-center py-4 mb-[20px]'>           
