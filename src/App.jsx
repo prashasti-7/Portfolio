@@ -13,7 +13,7 @@ import Socials from './components/Socials';
 const App = () => {
   return (
     <div className='bg-primary w-full overflow-hidden scroll-smooth p-10 snap-y overflow-y-auto'>
-     <Router>
+     <Router basename={process.env.PUBLIC_URL}>
       <div className='smoother-wrapper sm:px-16 px-6 flex justify-center items-center'>
           <div className='smooth-content xl:max-w-[1280px] w-full'>
             <NavBar />
